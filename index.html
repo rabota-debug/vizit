@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Имя Фамилия | Специализация</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #2c3e50;
+            --accent-color: #007aff;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #e0e0e0;
+            margin-bottom: 20px;
+            border: 3px solid var(--accent-color);
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            font-weight: 700;
+        }
+        .tagline {
+            font-size: 15px;
+            color: #7f8c8d;
+            margin: 0 0 20px 0;
+        }
+        .bio {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: block;
+            background: var(--bg-color);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            background: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <!-- Замените ссылку на свое фото или аватар -->
+        <img class="avatar" src="https://unsplash.com" alt="Фото">
+        
+        <h1>Иванов Иван</h1>
+        <p class="tagline">Ваша профессия / Специализация</p>
+        
+        <p class="bio">Коротко о вас: чем занимаетесь, какие задачи решаете, какой опыт. Буквально 2-3 предложения для создания доверия.</p>
+        
+        <div class="links">
+            <a href="tel:+79991112233" class="btn btn-primary">📞 Позвонить мне</a>
+            <a href="https://t.me" target="_blank" class="btn">💬 Написать в Telegram</a>
+            <a href="mailto:mail@example.com" class="btn">✉️ Написать на Email</a>
+            <a href="https://yourportfolio.com" target="_blank" class="btn">💼 Мое портфолио</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
